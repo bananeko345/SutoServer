@@ -123,7 +123,7 @@ async function updateStatus() {
     const ping = document.getElementById("ping");
 
     if (data.online) {
-      statusBox.textContent = "✅ サーバー稼働中";
+      statusBox.textContent = "✅ サーバー稼働中！";
       statusBox.className = "status-box online";
       onlineText.textContent = "オンライン";
 
@@ -133,7 +133,7 @@ async function updateStatus() {
 
       ping.textContent = data.debug.ping + " ms";
     } else {
-      statusBox.textContent = "❌ サーバー停止中";
+      statusBox.textContent = "❌ サーバー停止中！";
       statusBox.className = "status-box offline";
       onlineText.textContent = "オフライン";
       players.textContent = "-- / --";
